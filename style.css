@@ -1,0 +1,165 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+  direction: rtl;
+  text-align: right;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+h1 {
+  margin: 0;
+}
+
+button {
+  padding: 8px 12px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.form-row label {
+  margin-left: 5px;
+}
+
+#addName {
+  width: 35%; /* یا هر عرضی که می‌خواهی */
+}
+
+#studentName,
+#sessionDate {
+  width: 35%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.small-col {
+  width: 30px; /* این عرض برای ستون های کوچک به کار می‌رود */
+}
+
+.delete-btn {
+  padding: 0; /* حذف فضای داخلی دکمه حذف */
+  width: 20px; /* عرض دکمه حذف */
+  height: 20px; /* ارتفاع دکمه حذف */
+  font-size: 14px; /* اندازه فونت دکمه حذف */
+  line-height: 20px; /* تنظیم ارتفاع خط برای دکمه حذف */
+}
+
+input[type="text"], input[type="number"], select {
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+  font-size: 14px;
+  text-align: center;
+}
+
+input.small-input,
+input.weight-input,
+input.rest-input {
+  width: 30px; /* تنظیم عرض برای ورودی‌های کوچک */
+  padding: 0; /* حذف فضای داخلی باکس ورودی */
+  margin: 0; /* حذف فضای اضافی */
+  box-sizing: border-box;
+  height: 100%; /* تنظیم ارتفاع باکس ورودی به 100% */
+}
+
+/* حذف فاصله بین خطوط جدول */
+.rest-input {
+  line-height: 1; /* تنظیم ارتفاع خط برای حذف فاصله اضافی */
+}
+
+/* حذف دکمه‌های افزایش و کاهش عدد در ورودی‌های عددی */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield; /* برای مرورگر Firefox */
+}
+
+#notes {
+  margin-top: 20px;
+}
+
+#notes h3 {
+  margin-bottom: 10px;
+}
+
+#notes ul {
+  list-style-type: square;
+  margin: 0;
+  padding: 0;
+  padding-inline-start: 20px;
+}
+
+.add-row-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-row-btn:hover {
+  background-color: #0056b3;
+}
+
+#exerciseDropdown {
+  padding: 5px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* تنظیمات عرض برای تمام ستون‌ها به غیر از ستون حرکت */
+table td:nth-child(2), /* تعداد */
+table td:nth-child(3), /* ست */
+table td:nth-child(4), /* وزن */
+table td:nth-child(5) { /* استراحت */
+  width: 30px; /* تنظیم عرض برای تمامی ستون‌ها به غیر از ستون حرکت */
+}
